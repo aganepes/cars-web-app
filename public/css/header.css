@@ -138,7 +138,7 @@ header .top .center .input-container{
     display: flex;
 }
 
-header .top .center .input-container svg{
+header .top .center .input-container .svg{
     position: absolute;
     left:0.5rem;
     top:0.45rem;
@@ -188,7 +188,7 @@ header .top .center .input-container .search-result-container{
     padding:.3rem;
     border-radius: 5px;
 }
-.input-container .search-result-container .result svg{
+.input-container .search-result-container .result .svg{
     margin-top: .3rem;
 }
 .search-result-container .result .title {

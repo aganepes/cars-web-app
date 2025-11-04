@@ -229,15 +229,15 @@ headerSearchElement.addEventListener('keyup', async(e) => {
 });
 headerSearchElement.addEventListener('focusout', (e) => {
     console.log('focus out')
-    searchResultElement.classList.add('display-none');
+    searchResultElement?.classList.add('display-none');
 });
 headerSearchElement.addEventListener('focus', (e) => {
     console.log('focus')
-    if (searchResultElement.children.length) {
+    if (searchResultElement?.children.length) {
         searchResultElement.classList.remove('display-none');
     }
 });
-if (searchResultElement.clientHeight > 390) {
+if (searchResultElement?.clientHeight > 390) {
     console.log('scroll');
     searchResultElement.style.overflowY = "scroll";
 }
