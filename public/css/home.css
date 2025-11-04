@@ -1,0 +1,308 @@
+@import url('global.css');
+@import url('header.css');
+@import url('../libs/SwiperApi/swiper-bundle.min.css');
+@import url('card.css');
+@import url('additions.css');
+@import url('footer.css');
+
+main .posts-cont,main .cars-cont{
+  margin-top:1.2rem;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  gap:.63rem;
+}
+main .title-link{
+  color: var(--secondary-text-color);
+  line-height: 1.1;
+  font-size: 1.75rem;
+  padding-left:.63rem;
+  transition: .5s ease-in-out all;
+  width: fit-content;
+}
+main .title-link:hover{
+  color:var(--link-hover-color);
+}
+main .categories-tab-contianers {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: .75rem;
+  padding-left:.63rem;
+}
+
+main .category-button {
+  cursor: pointer;
+  background:var(--secondary-btn-bg-color);
+  color:var(--primary-text-color);
+  border:var(--card-border);
+  font-weight: 400;
+  border-radius: 3px;
+  padding: .63rem;
+  margin: .63rem 0 6px 6px;
+  font-size: 13px;
+}
+main .category-button:first-child{
+  margin-left:0;
+}
+main .category-button:hover,
+main .category-button.active{
+    background-color: var(--third-orange-color);
+    color: var(--white-color);
+}
+main .posts-cont .tabs-container{
+  width:100%;
+  position: relative;
+  height: auto;
+}
+
+main .main-adv{
+  margin-top: 1.63rem 1rem;
+}
+main .main-adv img{
+  width: 100%;
+  height: 5rem;
+}
+main .cars-cont{
+  padding-top:1rem;
+  gap:1.63rem;
+}
+
+
+.card-container{
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:1rem;
+  padding-left:0.7rem;
+  padding-right:0.7rem;
+  overflow:hidden;
+  position: absolute;
+  z-index: -1; 
+  opacity: 0;
+}
+
+.card-container.active,
+main .cars-cont .card-container,
+main .business-profile-cont .card-container{
+  position: relative;
+  z-index:0;
+  opacity:1;
+  padding:0.7rem;
+}
+.swiper-slide.card{
+  box-shadow: none;
+  width: 240px;
+  height: auto;
+  border:var(--card-border);
+}
+.card .post-body{
+  padding: 0.8rem 0.8rem;
+  box-sizing:border-box;
+  position:relative;
+}
+.card .post-body p{
+  font-size:0.8rem;
+  margin-top: 0;
+  color: var(--primary-text-color) !important;
+  margin-bottom: 0.8rem;
+}
+.card .post-body h4{
+  color: var(--secondary-text-color);
+  line-height: 1.1;
+  font-size: 1.125rem;
+  max-height: 4.3em;
+  font-weight: 500;
+  text-overflow: ellipsis !important;
+  overflow:  hidden;
+}
+.card .post-body h4:hover{
+  color:var(--link-hover-color);
+}
+main .business-profile-cont{
+  padding-top:1.2rem;
+}
+main .business-profile-cont .title-link{
+  margin-left:.63rem;
+}
+main .business-profile-cont .card-container{
+  margin-top:1.2rem;
+  padding:0.7rem;
+}
+main .business-profile-cont .card{
+  padding:1rem;
+  width:80%;
+  justify-content:center;
+  align-items: center;
+}
+main .business-profile-cont .card .profile-image{
+  padding:3px;
+  box-shadow: var(--bus-profile-img-shadow);
+  border-radius: 50%;
+  margin-top:2rem;
+}
+main .business-profile-cont .card img{
+  width:5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  display:flex;
+  justify-content:center;
+  align-items: center
+}
+main .business-profile-cont .card .card-body{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  margin-top:1.2rem;
+  padding:0.5rem;
+}
+.business-profile-cont .card .card-body .profile-title{
+  font-weight: bold;
+  transition: .5s ease-out all;
+}
+.business-profile-cont .card .card-body .profile-title:hover{
+  color:var(--secondary-orange-color);
+}
+.business-profile-cont .card .card-body .profile-category{
+  font-weight: 700;
+  margin-bottom:0.75rem;
+}
+.business-profile-cont .card .card-body .profile-discription{
+  text-align: center;
+  line-height: 1.1;
+  color:var(--primary-text-color);
+  height: calc(1.1em * 3);
+  overflow: hidden;
+}
+.business-profile-cont .card .card-body .profile-stars{
+  display:flex;
+  gap:.125rem;
+  margin-top:.313rem;
+}
+.business-profile-cont .card .card-body .profile-stars svg{
+  fill: var(--star-color);
+}
+@media(min-width:650px){
+  .card-container{
+    justify-content:space-between;
+  }
+  .cars-cont .card-container::after{
+    content: '';
+    width: 278px;
+  }
+  .business-profile-cont .card-container{
+    justify-content: space-between;
+  }
+  .business-profile-cont::after{
+    content: '';
+    width: 300px;
+
+  }
+  .business-profile-cont .card-container .card{
+    width:300px;
+  }
+}
+.sort-posts-cont {
+  padding:0.5rem 0;
+  padding-bottom:0;
+}
+.sort-posts-cont .card-container{
+  display: flex;
+  justify-content: center;
+  gap:1.2rem;
+  width:100%;
+  overflow:hidden;
+  position: static;
+  opacity: 1;
+  padding: 0.7rem;
+}
+.sort-posts-cont .card-container .card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  flex:1;
+}
+.sort-posts-cont .card .card-header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--secondary-border-color);
+  background: 0 0;
+  padding: .5rem 1.5rem;
+  min-height: 3.5rem;
+  align-items: center;
+  border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+.sort-posts-cont .card .card-header .card-all-link{
+  transition: .5s ease-in-out all;
+}
+.sort-posts-cont .card .card-header .card-all-link:hover {
+  color:var(--link-hover-color);
+}
+.sort-posts-cont .card .card-body{
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 1.5rem 1.5rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+.sort-posts-cont .card-body .card-item{
+  align-items: center;
+  align-items: flex-start;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.sort-posts-cont .card-body .card-item img{
+  border-radius:1.63rem;
+  height: auto;
+  width:var(--min-card-img-width);
+  border-radius: 5%;
+}
+.sort-posts-cont .card-body .card-item .post-content{
+  display:flex;
+  flex-direction:column;
+  padding-left:0.8rem;
+  min-width: 200px;
+}
+.sort-posts-cont .card-body .card-item .post-title{
+  color: var(--secondary-text-color);
+  margin-top: 0px;
+  margin-bottom: 0.3em;
+  line-height: 1.1;
+  font-size: 0.875rem;
+  font-weight: 600 !important;
+  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  max-height: 2.2em;
+  transition: .5s ease-in-out all;
+}
+.sort-posts-cont .card-body .card-item .post-title:hover{
+  color:var(--secondary-orange-color);
+}
+.sort-posts-cont .card-body .card-item .post-time{
+  font-size: 0.9rem;
+  color:var(--primary-text-color);
+  font-weight: 400;
+}
+
+@media(min-width:850px){
+  .posts-cont .card-container .card{
+    width:300px;
+  }
+  .cars-cont .card-container .card{
+     width:280px;
+  }
+  main .card .post-body{
+    padding: 1.5rem 1.5rem;
+  }
+
+}
+
+@media(min-width:910px){
+  main .sort-posts-cont .card-container{
+  justify-content: space-between;
+  }
+}

@@ -1,0 +1,210 @@
+@import "global.css";
+@import "header.css";
+@import "footer.css";
+
+.header-text-cont{
+  background-color:#5e49d1;
+  display:flex;
+  flex-direction: column;
+  padding:1rem;
+  gap:1rem;
+  color:var(--secondary-bg-color);
+}
+.header-text-cont .title{
+  align-self: center;
+  color:var(--white-color);
+}
+.header-text-cont .links{
+  list-style: none;
+  display: flex;
+  
+}
+.links li:last-child{
+  color:var(--white-color);
+}
+.links .division{
+  margin:0 0.5rem;
+}
+.links .home-link a{
+  color :var(--secondary-bg-color);
+  transition: 0.5s ease-in-out all;
+}
+.sing-up-wrapper a:hover,
+.links .home-link:hover a{
+  color:var(--secondary-orange-color);
+}
+.sing-up-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding:2rem;
+}
+.sing-up-wrapper a{
+  color:var(--primary-text-color);
+}
+.sing-up-wrapper .center{
+  border:var(--card-border);
+  min-width:300px;
+  max-width:350px;
+  padding:0.5rem;
+  box-shadow: 0 0 0.7rem 0.01rem var(--shadow-color);
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:0.6rem;
+  align-items: center;
+  background-color: var(--primary-bg-color);
+}
+.sing-up-form .email-status{
+  border: var(--card-border);
+  border-radius:0.8rem;
+  padding:1rem 0.5rem 0.6rem 0.5rem;
+  position: relative;
+  display:flex;
+  gap:0.7rem;
+  margin-top:1rem;
+}
+.email-status  label{
+  position: absolute;
+  top:-0.8rem;
+  left:1rem;
+  font-size:0.9rem;
+  background-color: var(--primary-bg-color);
+}
+.center input{
+  padding:0.5rem;
+  border:1px solid transparent;
+  outline:none;
+  border-radius: 0.5rem; 
+  background-color: var(--third-bg-color);
+}
+.center input::placeholder{
+  font-size: 0.7rem;
+}
+.center input:focus{
+  border-color: var(--third-btn-bg-color);
+}
+.center button,
+.email-status button{
+  padding:0.4rem;
+  cursor: pointer;
+  border:none;
+  border-radius:0.2rem;
+  transition: 0.5s ease-in-out all;
+   border:1px solid transparent;
+   background-color: var(--secondary-orange-color);
+   color:var(--white-color);
+}
+.center button:hover,
+.email-status button:hover{
+  color: var(--secondary-text-color);
+  border-color:var(--secondary-text-color);
+}
+.center .input-error{
+  position:absolute;
+  bottom:-1.2rem;
+  left:1rem;
+  color:var(--link-hover-color);
+  font-size:0.8rem;
+
+}
+.sing-up-form  .custom-control-cont{
+  font-size:0.8rem;
+  width: 80%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 0 1.2rem;
+  cursor: pointer;
+  position: relative;
+}
+.sing-up-form button{
+  margin-top: 0.8rem;
+}
+.sing-up-form .email-status,
+.sing-up-form button{
+  width:80%;
+}
+.sing-up-form .email-status input{
+  width:100%;
+}
+.custom-control-cont input[type=checkbox] {
+  /* visibility: hidden; */
+  display: none;
+}
+.checkbox-container {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 2px;
+  background-color: transparent;
+  border: 2px solid var(--primary-orange-color);
+}
+.custom-control-cont:hover input~.checkbox-container {
+  background-color: transparent;
+}
+.custom-control-cont input:active~.checkbox-container {
+  background-color: transparent;
+}
+.custom-control-cont input:checked~.checkbox-container {
+  background-color: var(--third-orange-color);
+  border-color: transparent;
+}
+.checkbox-container::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 3px;
+  top: -3px;
+  width: 5px;
+  height: 0.8rem;
+  border: solid var(--primary-btn-bg-color);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.custom-control-cont input:checked~.checkbox-container::after {
+  display: block;
+}
+.custom-control-cont .custom-control{
+  margin-left: 0.3rem;
+  text-align: center;
+}
+.check-status-form .infor{
+  padding:1rem;
+}
+.infor .phone-number{
+  color:var(--primary-orange-color);
+}
+.check-status-form .buttons{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap:1rem;
+}
+
+.confirm-email-form h5{
+  padding:1rem;
+  padding-bottom: 0.5rem;
+}
+.confirm-email-form .container{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  gap:1rem;
+}
+
+.container .mail{
+  position: relative;
+}
+.confirm-email-form .text-end{
+  display: flex;
+  justify-content: center;
+  gap:1rem;
+  margin:0.5rem 0;
+}

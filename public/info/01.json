@@ -1,0 +1,24 @@
+{
+  "settings": {
+    "auto_goals": 1,
+    "button_goals": 0,
+    "c_recp": "1.00000",
+    "form_goals": 1,
+    "pcs": "1",
+    "webvisor": {
+      "arch_type": "none",
+      "date": "2022-08-26 21:23:29",
+      "forms": 1,
+      "recp": "1.00000",
+      "urls": "regexp:.*"
+    },
+    "sbp": {
+      "a": "Fwj9tKapHdQQTYeBXDKqSE1StFfPkPom3yYEi2aEtMMSDakBYOnKLyo1YTSbh0zx",
+      "b": "oiy5bIo1aoRr18vIMkJLGFXIJFrxM2nDmZ/V6qHkCNtKyP9liVavj4YVMYB/VShU"
+    },
+    "eu": 0,
+    "hittoken": "1748504136_65488780f7b62381a4caad69e81605d8e2706daaeeb006dd834e4fa5bd238dab",
+    "wstoken": "10682.6twEhLDpZxn-jmbiT21dVsMjB9Xb94HuI07Pxw5ltwhDSWLf6p7ujSbvyNgeJbUvoDt2JDOj_Tlz5m6NoTlkCTj6BxOdK0VyqQ3S6nGsHJI,.6LonTH-gOXnf0AoPnmNlYLxyxpI,"
+  },
+  "userData": {}
+}

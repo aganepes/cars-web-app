@@ -1,0 +1,96 @@
+@import url('global.css');
+@import url("header.css");
+@import url('footer.css');
+
+.busniss-profile-container {
+    font-weight: 500;
+}
+
+.busniss-profile-container .card-header {
+    padding: 1rem;
+    border-bottom: 1px solid var(--primary-border-color);
+}
+
+.busniss-profile-container .card-header h3 {
+    font-weight: 500;
+}
+
+.busniss-profile-container .img-wrapper {
+    border: 4px solid var(--secondary-border-color);
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px 2px var(--secondary-border-color);
+    margin-bottom: .2rem;
+}
+
+.busniss-profile-container .img-wrapper img {
+    width: 120px;
+    height: 120px;
+}
+
+.busniss-profile-container .contents {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    align-items: center;
+}
+
+.busniss-profile-container .profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.busniss-profile-container .title {
+    text-transform: uppercase;
+}
+
+.busniss-profile-container .discription {
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.busniss-profile-container .contents a {
+    padding: .1rem .5rem;
+    background-color: var(--secondary-orange-color);
+    color: var(--white-color);
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: var(--card-border);
+}
+
+.busniss-profile-container .contents a:hover {
+    color: var(--white-color);
+    transform: scale(1.05);
+}
+
+.busniss-profile-container .connects {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.busniss-profile-container .connects h4 {
+    font-weight: 500;
+}
+
+.busniss-profile-container .connects .phone-number {
+    display: flex;
+    gap: 1rem;
+}
+
+.busniss-profile-container .sosial-media {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.busniss-profile-container .sosial-media img {
+    width: 24px;
+    height: auto;
+    border-radius: 5px;
+}
