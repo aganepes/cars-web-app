@@ -1,4 +1,4 @@
-# This project was implemented using only HTML, CSS and JS.
+# This project was implemented using only HTML, CSS and JAVASCRIPT.
 
 * The pages were developed with a responsive framework. The responsive framework has mobile, tablet and desktop views.
 * It has light and dark themes.
